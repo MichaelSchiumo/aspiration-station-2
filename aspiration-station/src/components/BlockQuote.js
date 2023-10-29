@@ -1,12 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./BlockQuote.css";
+import axios from "axios";
 
 const BlockQuote = () => {
+  const [quoteOfDay, setQuote] = useState({
+    text: "",
+    author: "",
+  });
+
+  useEffect(() => {
+    fetchQuote();
+  }, []);
+
+  const fetchQuote = async () => {
+    try {
+      const response = await axios.get(
+        "https://api.quotable.io/random?minLength=100"
+      );
+      setQuote(response.data);
+      debugger;
+    } catch (error) {
+      throw error;
+    }
+  };
+
   return (
     <div className="container mx-auto quote-top-margin">
-      <blockquote class="relative">
+      <blockquote className="relative">
         <svg
-          class="absolute top-0 left-0 transform -translate-x-6 -translate-y-8 h-16 w-16 text-gray-100 dark:text-gray-200"
+          className="absolute top-0 left-0 transform -translate-x-6 -translate-y-8 h-16 w-16 text-gray-100 dark:text-gray-200"
           width="16"
           height="16"
           viewBox="0 0 16 16"
@@ -20,12 +42,12 @@ const BlockQuote = () => {
           />
         </svg>
 
-        <div class="relative z-10">
-          <p class="text-xl text-gray-800 md:text-3xl md:leading-normal dark:text-dark">
-            <em>
-              I just wanted to say that I'm very happy with my purchase so far.
-              The documentation is outstanding - clear and detailed.
-            </em>
+        <div className="relative z-10">
+          <p className="text-xl text-gray-800 md:text-3xl md:leading-normal dark:text-dark">
+            <em>{quoteOfDay.content}</em>
+          </p>
+          <p className="text-md text-gray-800 md:text-lg md:leading-normal dark:text-dark">
+            -{quoteOfDay.author}
           </p>
         </div>
       </blockquote>
