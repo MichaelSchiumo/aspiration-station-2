@@ -1,9 +1,13 @@
-import './App.css';
-import Header from './components/Header.js';
+import "./App.css";
+import Header from "./components/Header.js";
+import BlockQuote from "./components/BlockQuote";
 
 function App() {
   return (
-    <Header />
+    <div id="container">
+      <Header />
+      <BlockQuote />
+    </div>
   );
 }
 
