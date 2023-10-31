@@ -11,7 +11,7 @@ const Container = () => {
               Sample
             </h3>
             <p className="mt-1 text-xs font-medium uppercase text-gray-500 dark:text-gray-500">
-              Card subtitle
+              Sample sub
             </p>
             <p className="mt-2 text-gray-800 dark:text-gray-400">
               Some quick example text to build on the card title and make up the
