@@ -18,7 +18,6 @@ const BlockQuote = () => {
         "https://api.quotable.io/random?minLength=100"
       );
       setQuote(response.data);
-      debugger;
     } catch (error) {
       throw error;
     }
