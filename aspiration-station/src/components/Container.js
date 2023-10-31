@@ -19,7 +19,7 @@ const Container = () => {
         <div className="col-span-6 text-center">
           <div className="flex flex-col bg-white border shadow-sm rounded-xl p-4 md:p-5 dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7] row-height">
             <h3 className="text-lg font-bold text-gray-800 dark:text-white">
-              Card title
+              Sample title
             </h3>
             <p className="mt-1 text-xs font-medium uppercase text-gray-500 dark:text-gray-500">
               Card subtitle
