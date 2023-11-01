@@ -6,6 +6,11 @@ const Container = () => {
 
   const [enteredThought, setEnteredThought] = useState('');
 
+  function handleSubmitThought() {
+    debugger;
+    setEnteredThought(thoughtOfDay.current.value);
+  }
+
   return (
     <div className='row-height'>
       <div className='grid grid-cols-12 gap-3 mt-10 px-20'>
@@ -16,14 +21,16 @@ const Container = () => {
             </h3>
             <p className='mt-2 text-gray-800 dark:text-gray-400'>
               <textarea
-                class='py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400'
+                ref={thoughtOfDay}
+                className='py-3 px-4 block w-full resize-none border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400'
                 rows='3'
                 placeholder="Jot down something that's on your mind today..."
               ></textarea>
             </p>
             <button
+              onClick={handleSubmitThought}
               type='button'
-              class='py-[.688rem] mt-2 w-24 px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-gray-200 font-semibold text-white hover:text-white hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all text-sm dark:border-gray-700 dark:hover:border-gray-300'
+              className='py-[.688rem] mt-2 w-24 px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-gray-200 font-semibold text-white hover:text-white hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all text-sm dark:border-gray-700 dark:hover:border-gray-300'
             >
               Submit
             </button>
