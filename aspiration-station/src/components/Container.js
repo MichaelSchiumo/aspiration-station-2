@@ -19,9 +19,9 @@ const Container = () => {
             </p>
             <button
               type="button"
-              class="py-[.688rem] mt-2 w-24 px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-gray-200 font-semibold text-white hover:text-white hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all text-sm dark:border-gray-700 dark:hover:border-blue-500"
+              class="py-[.688rem] mt-2 w-24 px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-gray-200 font-semibold text-white hover:text-white hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all text-sm dark:border-gray-700 dark:hover:border-gray-300"
             >
-              Jot!
+              Submit
             </button>
           </div>
         </div>
