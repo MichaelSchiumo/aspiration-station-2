@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import "./Container.css";
 
 const Container = () => {
+  const thoughtOfDay = useRef();
+
+  const [enteredThought, setEnteredThought] = useState("");
+
   return (
     <div className="row-height">
       <div className="grid grid-cols-12 gap-3 mt-10 px-20">
