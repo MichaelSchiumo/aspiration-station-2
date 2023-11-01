@@ -6,7 +6,7 @@ const Container = () => {
     <div className="row-height">
       <div className="grid grid-cols-12 gap-3 mt-10 px-20">
         <div className="col-span-6 text-center">
-          <div className="flex flex-col bg-white border shadow-sm rounded-xl p-4 md:p-5 dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7] row-height">
+          <div className="flex flex-col bg-white border shadow-sm rounded-xl p-4 md:p-5 dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7] h-80">
             <h3 className="text-lg font-bold text-gray-800 dark:text-white">
               Sample
             </h3>
