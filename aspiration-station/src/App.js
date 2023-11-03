@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header.js';
 import BlockQuote from './components/BlockQuote';
-import Container from './components/Container';
+import NewQuote from './components/NewQuote';
 import React, { useState } from 'react';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
     <div id='container'>
       <Header />
       <BlockQuote />
-      <Container />
+      <NewQuote />
     </div>
   );
 }

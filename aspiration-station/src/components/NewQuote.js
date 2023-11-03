@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
-import './Container.css';
+import './NewQuote.css';
 
-const Container = () => {
+const NewQuote = () => {
   const thoughtOfDay = useRef();
 
   const [enteredThought, setEnteredThought] = useState('');
@@ -68,4 +68,4 @@ const Container = () => {
   );
 };
 
-export default Container;
+export default NewQuote;
