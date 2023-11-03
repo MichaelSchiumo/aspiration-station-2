@@ -1,22 +1,31 @@
 import './App.css';
 import Header from './components/Header.js';
 import BlockQuote from './components/BlockQuote';
-import NewQuote from './components/NewQuote';
+import NewDailyThought from './components/NewDailyThought';
 import DailyThoughtList from './components/DailyThoughtList';
 import React, { useState } from 'react';
 
 function App() {
-  const [thoughtsState, setQuotesState] = useState({
+  //to check whether the user has added a daily thought, filter by the date add to see whether one exists
+  const [thoughtsState, setThoughtsState] = useState({
     todayQuoteId: undefined,
     thoughts: ['here'],
   });
 
+  function handleStartAddTodayThought() {
+    setThoughtsState((prevState) => {
+      return {
+        ...prevState,
+        todayQuoteId: null,
+      };
+    });
+  }
+
   let content;
 
-  if (thoughtsState.todayQuoteId === null) {
-    content = <NewQuote />;
-  } else if (thoughtsState.todayQuoteId === undefined) {
-    content = <DailyThoughtList thoughts={thoughtsState.thoughts} />;
+  //I think this logic is still broken
+  if (thoughtsState.todayQuoteId === undefined) {
+    content = <NewDailyThought />;
   }
 
   return (
