@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import './NewDailyThought.css';
 
+//add create daily thought fn here
 const NewDailyThought = () => {
   const thoughtOfDay = useRef();
 
