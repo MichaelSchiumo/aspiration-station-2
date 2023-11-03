@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
-import './NewQuote.css';
+import './NewDailyThought.css';
 
-const NewQuote = () => {
+const NewDailyThought = () => {
   const thoughtOfDay = useRef();
 
   const [enteredThought, setEnteredThought] = useState('');
@@ -68,4 +68,4 @@ const NewQuote = () => {
   );
 };
 
-export default NewQuote;
+export default NewDailyThought;
