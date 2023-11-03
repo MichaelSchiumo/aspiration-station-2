@@ -6,6 +6,7 @@ import DailyThoughtList from './components/DailyThoughtList';
 import React, { useState } from 'react';
 
 function App() {
+  //probs need to set up a backend for this
   //to check whether the user has added a daily thought, filter by the date add to see whether one exists
   const [thoughtsState, setThoughtsState] = useState({
     todayQuoteId: undefined,
