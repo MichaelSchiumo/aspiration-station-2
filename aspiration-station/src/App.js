@@ -10,8 +10,8 @@ function App() {
   //probs need to set up a backend for this
   //to check whether the user has added a daily thought, filter by the date add to see whether one exists
   const [thoughtsState, setThoughtsState] = useState({
-    todayQuoteId: undefined,
-    thoughts: ['here'],
+    todayThoughtId: undefined,
+    thoughts: [],
   });
 
   function handleStartAddTodayThought() {
