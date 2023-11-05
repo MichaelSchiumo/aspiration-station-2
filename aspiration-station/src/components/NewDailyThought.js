@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import './NewDailyThought.css';
 
 //add create daily thought fn here
-const NewDailyThought = () => {
+const NewDailyThought = ({ onAddThought }) => {
   const thoughtOfDay = useRef();
 
   const [enteredThought, setEnteredThought] = useState('');
