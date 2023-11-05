@@ -26,7 +26,7 @@ const NewDailyThought = ({ onAddThought }) => {
                 <blockquote className='mt-5 text-md font-medium text-white whitespace-normal'>
                   <p>{enteredThought}</p>
                 </blockquote>
-                <p class='mt-5 text-sm font-medium text-white whitespace-normal'>
+                <p className='mt-5 text-sm font-medium text-white whitespace-normal'>
                   User, Today's Date
                 </p>
               </>
