@@ -14,15 +14,6 @@ function App() {
     thoughts: [],
   });
 
-  function handleStartAddTodayThought() {
-    setThoughtsState((prevState) => {
-      return {
-        ...prevState,
-        todayThoughtId: null,
-      };
-    });
-  }
-
   function handleAddThought(thoughtData) {
     setThoughtsState((prevState) => {
       const newThought = {
