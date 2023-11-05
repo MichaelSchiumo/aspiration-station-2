@@ -7,8 +7,10 @@ const NewDailyThought = ({ onAddThought }) => {
 
   const [enteredThought, setEnteredThought] = useState('');
 
-  function handleSubmitThought() {
-    setEnteredThought(`${thoughtOfDay.current.value}`);
+  function handleSave() {
+    const thoughtText = thoughtOfDay.current.value;
+
+    onAddThought({ thoughtText });
   }
 
   return (
