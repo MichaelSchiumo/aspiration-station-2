@@ -26,8 +26,10 @@ function App() {
   let content;
 
   //I think this logic is still broken
-  if (thoughtsState.todayQuoteId === undefined) {
-    content = <NewDailyThought />;
+  if (thoughtsState.thoughts.length === 0) {
+    content = <NewDailyThought onAddThought={handleAddThought} />;
+  } else {
+    content = <DailyThoughtList />;
   }
 
   return (
