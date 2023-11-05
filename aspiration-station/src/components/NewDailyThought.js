@@ -14,7 +14,7 @@ const NewDailyThought = ({ onAddThought }) => {
   }
 
   return (
-    <div className='row-height'>
+    <div id='new-daily-thought-container'>
       <div className='grid grid-cols-12 gap-3 mt-10 px-20'>
         <div className='col-span-6 text-center'>
           <div className='flex flex-col bg-white border shadow-sm rounded-xl p-4 md:p-5 dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7] h-60'>
