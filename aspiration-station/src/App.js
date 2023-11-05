@@ -18,7 +18,21 @@ function App() {
     setThoughtsState((prevState) => {
       return {
         ...prevState,
-        todayQuoteId: null,
+        todayThoughtId: null,
+      };
+    });
+  }
+
+  function handleAddThought(thoughtData) {
+    setThoughtsState((prevState) => {
+      const newThought = {
+        ...thoughtData,
+        id: Math.random(),
+      };
+
+      return {
+        ...prevState,
+        thoughts: [...prevState.thoughts, newThought],
       };
     });
   }
