@@ -4,6 +4,7 @@ import BlockQuote from './components/BlockQuote';
 import NewDailyThought from './components/NewDailyThought';
 import DailyThoughtList from './components/DailyThoughtList';
 import React, { useState } from 'react';
+import dateFormat from 'dateformat';
 
 function App() {
   //do we need a date picker?
