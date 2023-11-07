@@ -25,16 +25,6 @@ const NewDailyThought = ({ onAddThought }) => {
             <h3 className='p-2 text-lg font-bold text-gray-800 dark:text-white text-left'>
               Thought of the Day
             </h3>
-            {enteredThought ? (
-              <>
-                <blockquote className='mt-5 text-md font-medium text-white whitespace-normal'>
-                  <p>{enteredThought}</p>
-                </blockquote>
-                <p className='mt-5 text-sm font-medium text-white whitespace-normal'>
-                  User, Today's Date
-                </p>
-              </>
-            ) : (
             <div>
                 <p className='mt-2 text-gray-800 dark:text-gray-400'>
                   <textarea
