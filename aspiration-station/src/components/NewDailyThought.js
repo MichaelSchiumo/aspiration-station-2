@@ -5,8 +5,6 @@ import './NewDailyThought.css';
 const NewDailyThought = ({ onAddThought }) => {
   const thoughtOfDay = useRef();
 
-  const [enteredThought, setEnteredThought] = useState('');
-
   function handleSave() {
     const thoughtText = thoughtOfDay.current.value;
 
