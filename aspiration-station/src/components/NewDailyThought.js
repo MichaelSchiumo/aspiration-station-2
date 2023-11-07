@@ -35,7 +35,7 @@ const NewDailyThought = ({ onAddThought }) => {
                 </p>
               </>
             ) : (
-              <div>
+            <div>
                 <p className='mt-2 text-gray-800 dark:text-gray-400'>
                   <textarea
                     ref={thoughtOfDay}
