@@ -36,7 +36,7 @@ function App() {
   if (thoughtsState.thoughts.length === 0) {
     content = <NewDailyThought onAddThought={handleAddThought} />;
   } else {
-    content = <DailyThoughtList />;
+    content = <DailyThoughtList thought={thoughtsState.thoughts[0]} />;
   }
 
   return (
