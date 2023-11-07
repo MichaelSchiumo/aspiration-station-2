@@ -20,6 +20,7 @@ function App() {
       const newThought = {
         ...thoughtData,
         id: Math.random(),
+        date: dateFormat(new Date(), 'mmmm dS, yyyy'),
       };
 
       return {
