@@ -1,4 +1,4 @@
-const DailyThoughtList = ({ thoughts }) => {
+const DailyThoughtList = ({ thought }) => {
   //how should we display daily thoughts? Should it be a separate page?
   return (
     <div>
