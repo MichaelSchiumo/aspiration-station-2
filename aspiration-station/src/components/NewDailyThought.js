@@ -26,23 +26,23 @@ const NewDailyThought = ({ onAddThought }) => {
               Thought of the Day
             </h3>
             <div>
-                <p className='mt-2 text-gray-800 dark:text-gray-400'>
-                  <textarea
-                    ref={thoughtOfDay}
-                    className='py-3 px-4 block w-full resize-none border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400'
-                    rows='3'
-                    placeholder="Jot down something that's on your mind today..."
-                    maxLength={120}
-                  ></textarea>
-                </p>
-                <button
-                  onClick={handleSave}
-                  type='button'
-                  className='py-[.688rem] mt-2 w-24 px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-gray-200 font-semibold text-white hover:text-white hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all text-sm dark:border-gray-700 dark:hover:border-gray-300'
-                >
-                  Submit
-                </button>
-              </div>
+              <p className='p-4 text-gray-800 dark:text-gray-400'>
+                <textarea
+                  ref={thoughtOfDay}
+                  className='py-3 px-4 block w-full resize-none border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400'
+                  rows='3'
+                  placeholder="Jot down something that's on your mind today..."
+                  maxLength={120}
+                ></textarea>
+              </p>
+              <button
+                onClick={handleSave}
+                type='button'
+                className='py-[.688rem] mt-2 w-24 px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-gray-200 font-semibold text-white hover:text-white hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all text-sm dark:border-gray-700 dark:hover:border-gray-300'
+              >
+                Submit
+              </button>
+            </div>
             )}
           </div>
         </div>
