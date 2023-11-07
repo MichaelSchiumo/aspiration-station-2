@@ -10,6 +10,10 @@ const NewDailyThought = ({ onAddThought }) => {
   function handleSave() {
     const thoughtText = thoughtOfDay.current.value;
 
+    if (thoughtText.trim() === '') {
+      return;
+    }
+
     onAddThought({ thoughtText });
   }
 
