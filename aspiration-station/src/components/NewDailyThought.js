@@ -43,7 +43,6 @@ const NewDailyThought = ({ onAddThought }) => {
                 Submit
               </button>
             </div>
-            )}
           </div>
         </div>
       </div>
