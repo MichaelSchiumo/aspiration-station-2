@@ -7,7 +7,6 @@ const BlockQuote = () => {
     text: '',
     author: '',
   });
-  
 
   useEffect(() => {
     fetchQuote();
